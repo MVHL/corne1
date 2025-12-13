@@ -148,7 +148,7 @@
 &kp DOLLAR   &kp PERCENT           &kp CARET              &kp AMPERSAND     &kp PIPE           &kp EXCLAMATION      &kp PLUS    &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
 &kp HASH     &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL            &kp MINUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON     &kp DOUBLE_QUOTES
 &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE            &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp QUESTION
-                                                          &kp LC(C)         &last_cmd          &kp LS(LG(ENTER))    &trans      &kp SPACE     &kp N0
+                                                          &kp LC(C)         &last_cmd          &kp LS(LG(ENTER))    &mo 4       &kp SPACE     &kp N0
             >;
         };
 
