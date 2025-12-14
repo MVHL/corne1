@@ -321,10 +321,10 @@
 
         MOUSE {
             bindings = <
-&none         &none         &none         &mkp MCLK  &none      &none     &none  &msc SCRL_LEFT  &mmv MOVE_UP       &msc SCRL_RIGHT  &none  &none
-&trans        &none         &none         &mkp LCLK  &mkp RCLK  &none     &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &none  &tog 4
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &none      &none     &none  &msc SCRL_DOWN  &msc SCRL_UP       &none            &none  &none
-                                          &trans     &trans     &trans    &none  &kp LC(SPACE)   &kp LA(BACKSPACE)
+&none         &kp LC(U)     &kp LC(I)  &mkp MCLK      &none           &none     &none  &msc SCRL_LEFT  &mmv MOVE_UP       &msc SCRL_RIGHT  &none  &none
+&trans        &kp LC(J)     &kp LC(K)  &mkp LCLK      &mkp RCLK       &none     &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &none  &tog 4
+&bt BT_SEL 0  &bt BT_SEL 1  &none      &kp LC(COMMA)  &kp LC(PERIOD)  &none     &none  &msc SCRL_DOWN  &msc SCRL_UP       &none            &none  &none
+                                       &trans         &trans          &trans    &none  &kp LC(SPACE)   &kp LA(BACKSPACE)
             >;
         };
     };
