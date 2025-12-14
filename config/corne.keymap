@@ -237,14 +237,14 @@
         copy_word: copy_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT &kp LA(LEFT) &kp LA(LS(RIGHT)) &kp K_COPY>;
+            bindings = <&kp RIGHT &kp LA(LEFT) &kp LA(LS(RIGHT)) &kp LG(C)>;
             label = "COPY_WORD";
         };
 
         paste_word: paste_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT &kp LA(LEFT) &kp LA(LS(RIGHT)) &kp K_PASTE>;
+            bindings = <&kp RIGHT &kp LA(LEFT) &kp LA(LS(RIGHT)) &kp LG(V)>;
             label = "PASTE_WORD";
         };
     };
