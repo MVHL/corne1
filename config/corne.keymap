@@ -89,10 +89,10 @@
 
         del_fwd {
             bindings = <&kp LA(DELETE)>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
         };
 
-        capword {
+        caps {
             bindings = <&kp CAPS>;
             key-positions = <2 3 4>;
         };
@@ -105,11 +105,6 @@
         clipboard {
             bindings = <&kp LC(LG(C))>;
             key-positions = <26 27 28>;
-        };
-
-        mouse {
-            bindings = <&mo 4>;
-            key-positions = <14 13>;
         };
 
         equal_2 {
@@ -130,6 +125,41 @@
         unequal_3 {
             bindings = <&unequal_3>;
             key-positions = <15 20 19>;
+        };
+
+        ge {
+            bindings = <&ge>;
+            key-positions = <14 19>;
+        };
+
+        le {
+            bindings = <&le>;
+            key-positions = <13 19>;
+        };
+
+        and_2 {
+            bindings = <&and_2>;
+            key-positions = <13 22>;
+        };
+
+        or_2 {
+            bindings = <&or_2>;
+            key-positions = <21 14>;
+        };
+
+        arrow_2 {
+            bindings = <&arrow_2>;
+            key-positions = <15 20>;
+        };
+
+        copy_word {
+            bindings = <&copy_word>;
+            key-positions = <26 27>;
+        };
+
+        paste_word {
+            bindings = <&paste_word>;
+            key-positions = <26 28>;
         };
     };
 
@@ -202,6 +232,20 @@
             #binding-cells = <0>;
             bindings = <&none &kp EQUAL &kp GT &kp SPACE>;
             label = "ARROW_2";
+        };
+
+        copy_word: copy_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT &kp LA(LEFT) &kp LA(LS(RIGHT)) &kp K_COPY>;
+            label = "COPY_WORD";
+        };
+
+        paste_word: paste_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT &kp LA(LEFT) &kp LA(LS(RIGHT)) &kp K_PASTE>;
+            label = "PASTE_WORD";
         };
     };
 
