@@ -48,8 +48,8 @@
             key-positions = <4 16>;
         };
 
-        comment {
-            bindings = <&kp LG(EXCL)>;
+        question {
+            bindings = <&kp QUESTION>;
             key-positions = <14 16>;
         };
 
@@ -321,10 +321,10 @@
 
         MOUSE {
             bindings = <
-&none                 &kp LC(Y)             &kp LC(U)             &mkp MCLK      &none           &none           &none  &msc SCRL_LEFT  &mmv MOVE_UP       &msc SCRL_RIGHT  &none  &none
-&kp LC(H)             &kp LC(N)             &kp LC(M)             &mkp LCLK      &mkp RCLK       &bt BT_SEL 0    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &none  &tog 4
-&kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LC(COMMA)  &kp LC(PERIOD)  &bt BT_SEL 1    &none  &msc SCRL_DOWN  &msc SCRL_UP       &none            &none  &none
-                                                                  &trans         &trans          &trans          &none  &kp LC(SPACE)   &kp LA(BACKSPACE)
+&none                 &kp LC(Y)             &kp LC(P)             &mkp MCLK      &none           &none           &kp LC(Y)  &msc SCRL_LEFT  &mmv MOVE_UP       &msc SCRL_RIGHT  &kp LC(P)      &none
+&kp LC(H)             &kp LC(N)             &kp LC(SLASH)         &mkp LCLK      &mkp RCLK       &bt BT_SEL 0    &kp LC(H)  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &none          &tog 4
+&kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LC(COMMA)  &kp LC(PERIOD)  &bt BT_SEL 1    &kp LC(N)  &msc SCRL_DOWN  &msc SCRL_UP       &none            &kp LC(SLASH)  &none
+                                                                  &trans         &trans          &trans          &none      &kp LC(SPACE)   &kp LA(BACKSPACE)
             >;
         };
     };
