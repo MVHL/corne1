@@ -36,16 +36,19 @@
         at {
             bindings = <&kp AT_SIGN>;
             key-positions = <14 2>;
+            require-prior-idle-ms = <250>;
         };
 
         hash {
             bindings = <&kp HASH>;
             key-positions = <15 3>;
+            require-prior-idle-ms = <250>;
         };
 
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
+            require-prior-idle-ms = <250>;
         };
 
         question {
@@ -322,9 +325,9 @@
         MOUSE {
             bindings = <
 &none                 &kp LC(Y)             &kp LC(P)             &mkp MCLK      &none           &none           &kp LC(Y)  &msc SCRL_LEFT  &mmv MOVE_UP       &msc SCRL_RIGHT  &kp LC(P)      &none
-&kp LC(H)             &kp LC(N)             &kp LC(SLASH)         &mkp LCLK      &mkp RCLK       &bt BT_SEL 0    &kp LC(H)  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &none          &tog 4
+&trans                &kp LC(N)             &kp LC(SLASH)         &mkp LCLK      &mkp RCLK       &bt BT_SEL 0    &kp LC(H)  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &none          &tog 4
 &kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LC(COMMA)  &kp LC(PERIOD)  &bt BT_SEL 1    &kp LC(N)  &msc SCRL_DOWN  &msc SCRL_UP       &none            &kp LC(SLASH)  &none
-                                                                  &trans         &trans          &trans          &none      &kp LC(SPACE)   &kp LA(BACKSPACE)
+                                                                  &trans         &trans          &trans          &mkp LCLK  &mkp RCLK       &kp LA(BACKSPACE)
             >;
         };
     };
